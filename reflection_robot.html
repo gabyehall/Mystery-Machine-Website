@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<title>Reflection</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/w3images/profile_girl.jpg');
+  min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <img src="pictures/logo.jpg" width="150" height ="150" alt="logo">
+  <h3 class="w3-padding-64 w3-center"><b>WUMPUS<br>WORLD</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a> 
+  <a href="reflection_robot.html" onclick="w3_close()" class="w3-bar-item w3-button">REFLECTION</a> 
+  <a href="design.html" onclick="w3_close()" class="w3-bar-item w3-button">DESIGN</a>
+  <a href="log.html" onclick="w3_close()" class="w3-bar-item w3-button">LOG</a>
+    <a href="logic.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGIC</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">MYSTERY INC.</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Reflections</b></h1>
+    <p>Reflection of Robot Performance and the AI</p>
+  </header>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7Wn_cftL92M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wamstu_sICs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <!-- Robot Performance -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>Reflection on the Robot's Performance</h2>
+    <hr class="w3-opacity">
+    <p>Overall, our robot did a sufficient job at the roundup. We played 2 different “worlds”, the first one being easy and the second one is more difficult. In the first round, our robot was able to successfully navigate around a hole. This showed that the logic we used to create our code was sound. It was able to avoid a dangerous zone by identifying possibilities of dangerous features using the “hint” ie. the breeze. However, our robot could not successfully turn around and find a new path to take once it reached the end of the board. It got stuck on the edge, and that meant it couldn’t complete the task. We are not sure why this was since our code was supposed to have the robot turn around and choose the next safe route when it reached the edge of the board.</p><p> We would need to review our code and run more trials in order to come to a sound conclusion as to why it didn’t work. While we did not get near the Wumpus, our code still had the ability to shoot the Wumpus, so we showed how our weapons system worked. During the second “world” there were more holes, and our robot continued to successfully navigate around them. We were also able to avoid the Wumpus. This proved that our code worked not only for identifying holes but identifying the Wumpus as well. We ran into a similar problem in this round, where our robot froze up. However, this time we’re in the middle of the board, and we had just come across a warning for the Wumpus and breeze. This leads us to believe that the robot had identified too many areas as dangerous zones, and because of that, it could not identify where the nearest safe path was. It’s important to note that on both occasions, a 180-degree turn could have helped the robot get back onto a safe path.</p><p> While we had these turns coded, and our code showed no errors, the robot struggled to implement this command. As previously stated, more trials would need to be run to determine exactly where the robot went wrong, and how that could be fixed. Of the other teams competing, only 2 were able to complete the task. The logic used by those teams seemed to be similar to ours, however, the order that they chose to move in was different. Some teams would automatically turn right and then start navigating, while others went forward. One thing we saw that was interesting was that a robot returned to the home space by retracing every movement it made. Both of those teams seemed to implement the use of a line follower to center their robot. While this did not impact the logic, it was a good way to help the robot move along the grid. While we did not complete the task and find the gold, we were still able to show our understanding of the logic of this problem, and that understanding was shown through our robot’s ability to navigate the board and avoid danger.
+    </p>
+    <h3 class="w3-padding-16">Skills</h3>
+    <p class="w3-wide">Movement</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+    </div>
+    <p class="w3-wide">Navigation</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide">Turning</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div><br>    
+  <!-- End Robot Section -->
+  </div>
+
+
+  <!-- AI Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>Reflection of the AI</h2>
+    <hr class="w3-opacity">
+
+
+
+    <p>When making this robot, we aimed to have it respond to its surroundings and use the information given to move in a logical way. According to the intelligence diagram discussed in class, this means that it exhibits basic intelligence. It is able to receive information and make choices based on said information. It can document where danger zones are, and it knows to only move in safe zones. It adapts to change, which can be seen through its ability to navigate around the grid using the information received. That shows that it had the intelligence required to make informed decisions. This lower level of intelligence can be seen in some animals, plants, and other technology. </p>
+    <p>If one were to create an intelligence profile for our robot, it would receive sufficient marks in its ability to learn, apply knowledge, reason, and respond to stimuli. It would receive a zero mark for its ability to understand, have conscious experience, create new ideas, and learn. However, it’s important to note that the robot can only function because of the logic algorithm it was coded with. Even with this code, it does not exceed the basic, lower level of intelligence. The robot cannot itself create ideas and it does not actually understand the actions it is doing. It cannot comprehend that the areas with holes are “dangerous” it just knows that it cannot move there. It does not have a fear of the wumpus, because it does not understand the concept of morality and it lacks the “drive to survive”. </p>
+    <p>It does not have views or personal beliefs, and it lacks key elements of identity. While it has a quantitative identity, that being its physical makeup, and it has a true identity since it is distinctly its own entity. It lacks personal identity, it does not have a sense of self and a distinct personality that it can be identified by. It also cannot identify itself, it is not self-aware. Based on these conclusions, the robot cannot be considered conscious. It does not have a “mind” of its own since it only functions if it is coded. Since it can not generate its own thoughts, it cannot be considered highly intelligent or conscious. However, this is normal for AI. We have not yet reached the point where we can replicate the specific functions that are unique to human minds. Until we can perfectly quantify what a mind or consciousness is, we cannot replicate it in AI. 
+    </p>
+    <p>This project has broadened our group’s understanding of how versatile AI is. We have managed to mimic intelligence and transfer that to an autonomous robot. We were able to write down our own thinking, determine how we would go about solving the challenge if we were on the grid, and then implement our own logic or the robot to use. Technology has gotten to the point where we can implement human reasoning into machines, and if we were ever able to implement more aspects of the human mind, it would only ameliorate technology. </p>
+
+    <h3 class="w3-padding-16">Skills</h3>
+    <p class="w3-wide">Logic</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+    </div>
+    <p class="w3-wide">Algorithm</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide">"Thinking" </p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div><br>    
+  <!-- End AI Section -->
+  </div>
+
+
+  
+  </div>  
+  
+  <!-- Footer -->
+
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
