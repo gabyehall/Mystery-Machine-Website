@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<title>Design</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/w3images/profile_girl.jpg');
+  min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <img src="pictures/logo.jpg" width="150" height ="150" alt="logo">
+  <h3 class="w3-padding-64 w3-center"><b>WUMPUS<br>WORLD</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a> 
+  <a href="reflection_robot.html" onclick="w3_close()" class="w3-bar-item w3-button">REFLECTION</a> 
+  <a href="design.html" onclick="w3_close()" class="w3-bar-item w3-button">DESIGN</a>
+  <a href="log.html" onclick="w3_close()" class="w3-bar-item w3-button">LOG</a>
+    <a href="logic.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGIC</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">WUMPUS WORLD</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Design and Development</b></h1>
+    <p>Our Design Choices</p>
+  </header>
+
+
+
+  <!-- Build Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>Building and Design Choices</h2>
+    <hr class="w3-opacity">
+    <p>The first step in building the robot was to figure out what the robot needed to do to conquer the Wumpus World problem. Of course, the robot would need to drive, but it also would need some way to detect input from the grid, in this case via color sensors white lines on the grid. The input would allow it to know what square it was in and to adjust itself so that it would be able to drive straight. Our needed parts were Drive Wheels, Balancing Wheel(s), and Color Sensors.
+In order to make the robot drive, it needs to have two drive wheels and either one or two wheels to keep itself balanced. We decided to attach the drive wheels in a strictly vertical fashion in order to minimize the number of pieces used, increase stability, and optimize the ease of adding other attachments. If we were to add these wheels at angles then everything else would have to be added at an angle as well, making it much more time consuming to build. We would have to ensure that all the parts work at an angle to the base. There is no reason to build the robot at an angle, so we did not build it at an angle.</p>
+
+  <p>In order to balance the robot, it needs to have at least three wheels. The two main options are to have one or two wheels other than the wheels. Any more than that would be excessive and a waste of material. To make two extra wheels, such as in a car, both would have to be able to pivot. A pivoting wheel without a driving force is called a caster wheel. By making both front wheels able to pivot we would effectively be making two caster wheels using extra material for very little gain, if any, in the fields of mobility and stability. Rather than that, we can just make one wheel to keep the robot stable, which will be faster and take less work.</p>
+
+<p>We decided to connect it to the front of the robot, the opposite side of the drive wheels, so we could connect it vertically and keep the robot balanced. We could have connected it in the back and extended it to the front by a horizontal connection. This would make the robot shorter and keep its center of gravity lower to make it more stable. However, we would have to do the same with the drive wheels, which could present a difficulty in easily adding other parts. There was an earlier design for the caster wheels when we did not realize that the kit includes a ball pivot. Instead, we had built an assembly of a small wheel that attached to the main body via a single technic pin, allowing it to rotate. This took many more pieces than the ball pivot and did not allow for easy attachment of the light sensors.</p>
+
+  <p>We prepared for the attachment of the color sensors when we decided to put the caster wheel on the robot vertically. This allowed for a fast and easy connection to the robot while keeping the sensors perpendicular to the ground for effective sensing. The location was also near to the input ports on the robot, making it a prime area of connection.</p>
+
+<p>These were all the necessary attachments to allow the robot to effectively solve the Wumpus World problem. Due to the speedy completion of the main building of the robot and the excess of pieces left over after the main body had been built, Mr. Joseph Raheb was appointed the Secretary of War on the 21st day of November in AD 2019 in order to wage physical war against the Wumpus. Thus, on that day, Weapons Systems was founded as a subsidiary of Mystery Inc.
+
+    </p>
+<div class="w3-container w3-center">
+  <hr>
+  <h3>Pictures</h3>
+</div>
+
+<div class="w3-row-padding"> 
+
+<div class="w3-third">
+<div class="w3-card">
+  <img src="pictures/build2.jpg" alt="Car" style="width:100%">
+  <div class="w3-container">
+  </div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card-4">
+  <img src="pictures/build4.jpg" alt="Car" style="width:100%">
+  <div class="w3-container">
+  </div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card-4">
+  <img src="pictures/build6.jpg" alt="Car" style="width:100%">
+  <div class="w3-container">
+  </div>
+</div>
+</div>
+</div>
+
+  <!-- End About Section -->
+  </div>
+  
+    <!-- Code Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>Weaponry Choices</h2>
+    <hr class="w3-opacity">
+    <p>
+
+The first and only job of Weaponry Systemes was to find a way to defeat the Wumpus, a beast that was, at the time, considered almost invincible, only able to be killed by a mythic cyber arrow. Weaponry Systemes designed and built the first-ever Wumpus ShooterTM, a device with the sole purpose of killing the Wumpus. </p>
+
+  <p>In order to kill the Wumpus, it must be impaled by something similar to the cyber arrow. In order to impale the beast, a projectile must be launched. Due to the lack of springs, elastic power, and explosive force, it was determined that rotational motion must be used via a medium-size motor. An arrow cannot be thrown in the same way that a catapult or a trebuchet would launch a projectile. Instead, there must be some way to change rotational motion into linear motion. Weaponry Systemes produced the revolutionary idea of using the projectile itself to convert between the two types of motion rather than using the launcher itself to do this. This was accomplished via an unprecedented use of a worm gear as a replacement for a rack gear (a gear with infinite radius, aka a rack, is a straight line of gear teeth) wrapped around an axle rather than the norm of powering the worm gear to turn a spur (ordinary) gear. After securing two worm gears in place on the axle with half bushings a small frame was built directly transferring the power of the motor into the projectile via a 40 tooth gear. </p>
+
+
+  <p>Testing first commenced outside of class hours. The initial test was a mild success, launching the projectile about an inch, achieving proof of concept, but clearly not powerful enough to defeat the Wumpus. This testing also spearheaded research into the code for the project, showing that there was a different command for the medium motor as there was for the large motor. This also showed that a program will not run when the signals sent to the motors reach the wrong type of motor or an empty port, allowing us to debug the code later. </p>
+
+  <p>In order to defeat the Wumpus, the projectile must be launched further. The most effective way to increase the distance of the projectile launch is to increase the velocity at which it fires. The motor is already running at full rpm, so it cannot be increased any further. There is still a way to increase the velocity: By using a gear train we can sacrifice power but increase the speed of the projectile.</p>
+
+  <p>The step order of the gear train was determined to be, in teeth, 40 to 8 to 40 to 8 to 24 to 8. This achieved 75 times the initial speed: 40 to 8 is 5x, 8 to 40 is a 1:1 because they are on the same axle, 40 to 8 is another 5x, 8 to 24 is 1:1, and 24 to 8 is a 3x (5*5*3=75). A separate gear that was not connected to the train was put in place to keep the projectile from shooting awry. The projectile is now able to shoot about 6 inches, depending on the position of the launcher and quite a bit of luck. However, the launcher would jam about half the time it was launched. This led to a quick modification of the launcher frame, making it more sturdy, which made it far less likely to jam. 
+
+    </p>
+
+  <img src="pictures/gun3.jpg" alt="Car" style="width:100%">
+  
+  <!-- End About Section -->
+  </div>
+
+  
+
+
+
+  </div>  
+  
+  <!-- Footer -->
+
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

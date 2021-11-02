@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <img src="pictures/logo.jpg" width="150" height ="150" alt="logo">
+  <h3 class="w3-padding-64 w3-center"><b>WUMPUS<br>WORLD</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a> 
+  <a href="reflection_robot.html" onclick="w3_close()" class="w3-bar-item w3-button">REFLECTION</a> 
+  <a href="design.html" onclick="w3_close()" class="w3-bar-item w3-button">DESIGN</a>
+  <a href="log.html" onclick="w3_close()" class="w3-bar-item w3-button">LOG</a>
+    <a href="logic.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGIC</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">WUMPUS WORLD</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="pictures/robot_on_map.jpg" width="400" height ="400" onclick="onClick(this)" alt="Our baby, the mystery machine!">
+      <img src="pictures/pregun.jpg" width="400" height ="400" onclick="onClick(this)" alt="The mystery machine pre-weapons">
+      <img src="pictures/side.jpg" width="400" height ="400" onclick="onClick(this)" alt="Side view of the mystery machine">
+    </div>
+
+    <div class="w3-third">
+      <img src="pictures/team2.jpg" width="400" height ="400" onclick="onClick(this)" alt="Our team">
+      <img src="pictures/team3.jpg" width="400" height ="400" onclick="onClick(this)" alt="Our team">
+      <img src="pictures/team_working.jpg" width="400" height ="400" onclick="onClick(this)" alt="Our team hard at work!">
+    </div>
+    
+    <div class="w3-third">
+      <img src="pictures/profile.jpg" width="400" height ="400" onclick="onClick(this)" alt="The mystery machine">
+      <img src="pictures/pregun2.jpg" width="400" height ="400" onclick="onClick(this)" alt="The mystery machine pre-weapons">
+      <img src="pictures/Snapchat-18680094.jpg" width="400" height ="400" onclick="onClick(this)" alt="The mystery machine on a test run">
+    </div>
+  </div>
+
+  <!-- spacing -->
+  <div class="w3-center w3-padding-32">
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Our Project</b></h4>
+    <!--replace this video with embedded youtube of running robot -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/z5aal7B9VhE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <img src="https://images-na.ssl-images-amazon.com/images/I/51D254fqAYL._SX355_.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650"> -->
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Mystery Inc.</h4>
+      <h5><i>Why not kill the Wumpus?</i></h5>
+      <p>The <a href="http://www.cogsci.rpi.edu/public_html/heuveb/Teaching/M&M/WumpusWorld/WumpusWorld.htm">Wumpus World challenge</a> is an academic endeavor that combines logic, engineering, and collaboration to solve a problem. Our team went about building and coding a robot to successfully navigate a grid full of potential hazards and achieve a set goal. In the Wumpus world challenge, there is a grid with a set amount of holes, 1 Wumpus monster, and 1 pile of gold. If our robot moved to an area containing a hole or the wumpus, we lost the challenge, but if we successfully navigated the grid and found the pile of gold, we won. We can not see where these things are, so we must rely on input from the environment. When a hole is near, a breeze is felt, when the Wumpus is near, there is a smell, and when the gold is near, we see the glitter. When we moved to a new square, we would be informed of any new input, which we would then send to the robot. 
+      </p>
+
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Robot's Skills/ Testing Results</h4>
+      <p class="w3-wide">Navigation</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide">Build</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide">Design</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:90%">90%</div>
+      </div>
+
+
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Our Team</b></h4>
+      <p>This is our team the Mystery Inc.! Click on our pictures to find out more!</p>
+
+    <!-- Photo grid Team -->
+  <div class="w3-row">
+    <div class="w3-half">
+      <img src="pictures/fred.jpg" width="300" height ="300" onclick="onClick(this)" alt="Lizzie: Web Designer, Builder, Logistician">
+      <img src="pictures/shaggy.jpg" width="300" height ="300" onclick="onClick(this)" alt="Erin: Logistician, Robot Coder">
+      <img src="pictures/velma.jpg" width="300" height ="300" onclick="onClick(this)" alt="Gaby: Web Designer, Robot Coder, Web Coder">
+    </div>
+
+    <div class="w3-half">
+      <img src="pictures/scooby.jpg" width="300" height ="300" onclick="onClick(this)" alt="Ralph: Photographer, Builder, Logistician">
+      <img src="pictures/scarppy.jpg" width="300" height ="300" onclick="onClick(this)" alt="Joey: Secretary of War, Builder">
+      <img src="pictures/myster_machine.jpg" width="300" height ="300" onclick="onClick(this)" alt="Mystery Machine: Our Baby!">
+    </div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
